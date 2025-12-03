@@ -1,6 +1,6 @@
 import React from "react";
 import { Code2, PenTool, Smartphone, Layers } from "lucide-react";
-import { ServiceItem } from "../types";
+import { ServiceItem } from "../../types";
 
 const services: ServiceItem[] = [
   {

@@ -49,7 +49,7 @@ const About: React.FC = () => {
         <div className="flex justify-center md:justify-end">
           <div className="relative w-full max-w-sm h-96 overflow-hidden rounded-2xl shadow-xl">
             <img
-              src="/Main1.jpeg"
+              src="../images/Main1.jpeg"
               alt="Sufiyan Khan"
               className="w-full h-full object-cover"
             />

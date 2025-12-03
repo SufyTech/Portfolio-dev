@@ -10,6 +10,7 @@ import Certifications from "./components/Certifications";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import LoaderAI from "./components/LoaderAI";
+import WhatsApp from './assets/whatsapp.svg';
 import "./index.css";
 
 const App: React.FC = () => {
@@ -69,7 +70,7 @@ const App: React.FC = () => {
                        shadow-lg z-[9999] transition-all duration-300 md:bottom-4 md:right-4"
           >
             <img
-              src="/whatsapp.svg"
+              src={WhatsApp}
               alt="WhatsApp"
               className="w-7 h-7 md:w-6 md:h-6 filter transition-all duration-300 hover:brightness-125"
             />

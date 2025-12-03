@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
             {/* Image Container */}
             <div className="absolute inset-0 bg-blue-900 rounded-tr-[4rem] rounded-bl-[4rem] overflow-hidden border-4 border-white shadow-xl">
               <img
-                src="/Main.jpeg"
+                src="../images/Main.jpeg"
                 alt="Sufiyan Khan"
                 className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
               />

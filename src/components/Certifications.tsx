@@ -1,12 +1,12 @@
 import React from "react";
-import { CertificationItem } from "../types";
+import { CertificationItem } from "../../types";
 
 const certifications: CertificationItem[] = [
   {
     id: "1",
     title: "Tata Group Data Analytics Job Simulation",
     issuer: "Tata Group",
-    image: "c1.png",
+    image: "../images/c1.png",
     date: "Oct 2025",
     subtitle:
       "Data analysis, business insights, dashboard interpretation, Excel-based decision-making.",
@@ -15,7 +15,7 @@ const certifications: CertificationItem[] = [
     id: "2",
     title: "Deloitte Australia Technology Job Simulation",
     issuer: "Deloitte Australia",
-    image: "c2.png",
+    image: "../images/c2.png",
     date: "Oct 2025",
     subtitle:
       "Technology consulting, solution architecture, client problem-solving, technical strategy.",
@@ -24,7 +24,7 @@ const certifications: CertificationItem[] = [
     id: "3",
     title: "Deloitte Data Analytics Job Simulation",
     issuer: "Deloitte",
-    image: "c3.png",
+    image: "../images/c3.png",
     date: "Feb 2025",
     subtitle:
       "Data exploration, visualization, KPI reporting, real-world analytics case tasks.",

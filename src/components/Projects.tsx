@@ -1,40 +1,40 @@
 import React from "react";
-import { ProjectItem } from "../types";
+import { ProjectItem } from "../../types";
 
 const projects: ProjectItem[] = [
   {
     id: "1",
     title: "CodeMind AI",
     category: "AI • SaaS • Full Stack",
-    image: "p1.png",
+    image: "../images/p1.png",
     link: "https://codemind-ai-eight.vercel.app/",
   },
   {
     id: "2",
     title: "K72 Creatives Website",
     category: "Web • UI/UX • Animations",
-    image: "p2.png",
+    image: "../images/p2.png",
     link: "https://k72-creatives.vercel.app/",
   },
   {
     id: "3",
     title: "Go3D Interactive Website",
     category: "3D • Spline • React",
-    image: "p3.png",
+    image: "../images/p3.png",
     link: "https://go3d.vercel.app/",
   },
   {
     id: "4",
     title: "Award-Winning Gaming Website",
     category: "GSAP • UI Engineering",
-    image: "p4.png",
+    image: "../images/p4.png",
     link: "https://vercel-gaming-showcase.vercel.app/",
   },
   {
     id: "5",
     title: "MotionRefokus Website",
     category: "Micro-Interactions • UI",
-    image: "p5.png",
+    image: "../images/p5.png",
     link: "https://motion-refokus.vercel.app/",
   },
 ];

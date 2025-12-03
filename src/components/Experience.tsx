@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { ExperienceItem } from "../types";
+import { ExperienceItem } from "../../types";
 
 const initialExperience: ExperienceItem[] = [
   {
