@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "SufiyanFont";
+  src: url("/fonts/customfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.font-sufiyan {
+  font-family: "SufiyanFont", sans-serif;
+}
+
+
+/* small helper for three-dot delay */
+.suf-dots > span {
+  display: inline-block;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 9999px;
+  background-color: #065f46; /* emerald-600 */
+  margin: 0 0.25rem;
+  animation: suf-bounce 0.8s infinite ease-in-out;
+}
+.suf-dots > span:nth-child(2) { animation-delay: 0.12s; }
+.suf-dots > span:nth-child(3) { animation-delay: 0.24s; }
+
+@keyframes suf-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: .6; }
+  40% { transform: translateY(-8px); opacity: 1; }
+}
+
+/* Fade-out transitions for loader container */
+.loader-fade-enter { opacity: 1; }
+.loader-fade-exit { opacity: 1; transition: opacity .45s ease-in-out; }
+.loader-fade-exit.hidden { opacity: 0; pointer-events: none; }
+
+
+
+/* Optional smoother spin */
+@keyframes slowspin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-slowspin {
+  animation: slowspin 1.6s linear infinite;
+}
+
+
+.noise-texture {
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+
+/* Loader fade-out animation */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* Portfolio content fade-in animation */
+.portfolio-fade-in {
+  opacity: 0;
+  animation: fadeInSmooth 0.9s ease forwards;
+}
+
+@keyframes fadeInSmooth {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+
+
+.spinner {
+  width: 44px;
+  height: 44px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: rgba(0, 200, 0, 0.2); /* semi-transparent green */
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #069b06; /* bright green border */
+}
+
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-22px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  animation: spinner-rotate 2s infinite ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.spinner > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00c800; /* Green cube */
+  background-color: rgba(0, 200, 0, 0.2);
+}
+
+/* Cube Faces */
+.spinner div:nth-of-type(1) { transform: translateZ(-32px) rotateY(180deg); }
+.spinner div:nth-of-type(2) { transform: rotateY(-270deg) translateX(32px); transform-origin: top right; }
+.spinner div:nth-of-type(3) { transform: rotateY(270deg) translateX(-32px); transform-origin: center left; }
+.spinner div:nth-of-type(4) { transform: rotateX(90deg) translateY(-32px); transform-origin: top center; }
+.spinner div:nth-of-type(5) { transform: rotateX(-90deg) translateY(32px); transform-origin: bottom center; }
+.spinner div:nth-of-type(6) { transform: translateZ(32px); }
+
+@keyframes spinner-rotate {
+  0% { transform: rotateX(-25deg) rotateY(25deg); }
+  50% { transform: rotateX(-385deg) rotateY(25deg); }
+  100% { transform: rotateX(-385deg) rotateY(385deg); }
+}
+
+
+/* Loader fade-out */
+.fade-out {
+  animation: loaderFadeOut 0.6s forwards ease-in-out;
+}
+
+@keyframes loaderFadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; pointer-events: none; }
+}
+
+/* Portfolio fade-in */
+.portfolio-fade-in {
+  animation: portfolioFadeIn 0.8s forwards ease-in-out;
+}
+
+@keyframes portfolioFadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.whatsapp-float {
+  animation: float 2s ease-in-out infinite;
+}
