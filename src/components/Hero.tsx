@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
               {" "}
               React, Node.js, Express, MongoDB
             </span>
-            along with modern UI engineering using
+            &nbsp; along with modern UI engineering using
             <span className="font-semibold">
               {" "}
               Tailwind, GSAP, and Framer Motion.
