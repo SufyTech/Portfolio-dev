@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-6">
             {/* Resume */}
             <a
-              href="Sufiyan_KhanResume.pdf"
+              href="/Sufiyan_KhanResume.pdf"
               className="flex items-center space-x-2 text-sm font-medium text-gray-600 hover:text-emerald-600"
             >
               <FileText size={18} />
